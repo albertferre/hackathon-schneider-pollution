@@ -1,3 +1,20 @@
+# Air Quality Insights 🏆
+
+## 🥈 Second Place in the hackaton-schneider-pollution
+This repository contains the solution that achieved **second place** in the air quality challenge organized by **Nuwe** and **Schneider Electric**.
+Below are the results obtained:
+
+### 📊 My Score
+![My Score](img/score.png)
+
+### 📌 Final Ranking
+![Final Ranking](img/ranking.png)
+
+
+### 🏆 Challenge Details
+---
+
+
 # Air Quality Insights
 
 Category   ➡️   Data Science
@@ -13,7 +30,7 @@ Difficulty   ➡️   Medium
 
 The challenge of energy pollution and climate action arises from the global dependency on fossil fuels, which are the primary contributors to greenhouse gas emissions. The combustion of coal, oil, and natural gas for energy production releases carbon dioxide and other harmful pollutants into the atmosphere, accelerating climate change and damaging ecosystems. As energy demand surges due to population growth and industrial development, the environmental impact intensifies. This challenge necessitates innovative solutions to transition towards cleaner energy sources, enhance energy efficiency, and implement sustainable practices. Tackling energy pollution is vital not only for mitigating climate change but also for fostering healthier communities and ensuring long-term environmental sustainability.
 
-### 🗂️ Dataset 
+### 🗂️ Dataset
 
 Three distinct datasets will be provided:
 
@@ -61,7 +78,7 @@ Three distinct datasets will be provided:
     - `Bad`
     - `Very bad`
 
-  
+
 
 
 ### 📊 Data Processing
@@ -79,34 +96,34 @@ The repository structure is provided and must be adhered to strictly:
 
 ```
 
-├── data/                      
+├── data/
 │   ├── raw/
-│   │   └── pollutant_data.csv  
-│   └── processed/                 
+│   │   └── pollutant_data.csv
+│   └── processed/
 │
-│── predictions/   
-│   ├── questions.json 
-│   ├── predictions_task_2.json 
-│   └── predictions_task_3.json     
-│ 
-│── models/   
+│── predictions/
+│   ├── questions.json
+│   ├── predictions_task_2.json
+│   └── predictions_task_3.json
+│
+│── models/
 │   ├── model_task_2
 │   └── model_task_3
 │
-├── src/                       
-│   ├── data/                   
-│   │   ├── questions.py   
+├── src/
+│   ├── data/
+│   │   ├── questions.py
 │   │   └── ...
 │   │
 │   └── models/
-│       └── (prepare your data and create the model)                      
+│       └── (prepare your data and create the model)
 │
-└── README.md 
+└── README.md
 
 ```
 
 The `/predictions` folder should contain the tasks outputs for the questions in Task 1 and the predictions for both Task 2 and Task 3.
- 
+
 
 ## 🎯 Tasks
 This challenge will include three tasks: an initial exploratory data analysis task with questions, followed by two model creation tasks.
@@ -117,11 +134,11 @@ This challenge will include three tasks: an initial exploratory data analysis ta
 
   - **Q1:** Average daily SO2 concentration across all districts over the entire period. Give the station average. Provide the answer with 5 decimals.
   - **Q2:** Analyse how pollution levels vary by season. Return the average levels of CO per season at the station 209. (Take the whole month of December as part of winter, March as spring, and so on.) Provide the answer with 5 decimals.
-  - **Q3:** Which hour presents the highest variability (Standard Deviation) for the pollutant O3? Treat all stations as equal. 
-  - **Q4:** Which is the station code with more measurements labeled as "Abnormal data"? 
+  - **Q3:** Which hour presents the highest variability (Standard Deviation) for the pollutant O3? Treat all stations as equal.
+  - **Q4:** Which is the station code with more measurements labeled as "Abnormal data"?
   - **Q5:** Which station code has more "not normal" measurements (!= 0)?
   - **Q6:** Return the count of `Good`, `Normal`, `Bad` and `Very bad` records for all the station codes of PM2.5 pollutant.
- 
+
 
 Example question output format:
 ```json
@@ -146,7 +163,7 @@ Example question output format:
   }
 }
 ```
-  
+
 #### **Task 2:** Develop the forecasting model :
 - Predict hourly pollutant concentrations for the following stations and periods, assuming error-free measurements:
 
@@ -164,7 +181,7 @@ Expected output format:
 {
   "target":
   {
-    "206": 
+    "206":
       {
         "2023-07-01 00:00:00": 0.32,
         "2023-07-01 01:00:00": 0.5,
@@ -200,7 +217,7 @@ Example output:
 {
   "target":
   {
-    "205": 
+    "205":
     {
       "2023-11-01 00:00:00": 5,
       "2023-11-01 01:00:00": 3,
@@ -242,7 +259,7 @@ The grading system will be the following:
 - Task 2: 550 / 1400 points
 - Task 3: 550 / 1400 points
 
-**⚠️ Please note:**  
+**⚠️ Please note:**
 All submissions might undergo a manual code review process to ensure that the work has been conducted honestly and adheres to the highest standards of academic integrity. Any form of dishonesty or misconduct will be addressed seriously, and may lead to disqualification from the challenge.
 
 ## ❓ FAQs
