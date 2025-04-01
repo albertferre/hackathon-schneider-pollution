@@ -1,0 +1,7 @@
+Item code,Item name,Unit of measurement,Good,Normal,Bad,Very bad
+0,SO2,ppm,0.02,0.05,0.15,1.0
+2,NO2,ppm,0.03,0.06,0.2,2.0
+4,CO,ppm,2.0,9.0,15.0,50.0
+5,O3,ppm,0.03,0.09,0.15,0.5
+7,PM10,Mircrogram/m3,30.0,80.0,150.0,600.0
+8,PM2.5,Mircrogram/m3,15.0,35.0,75.0,500.0
